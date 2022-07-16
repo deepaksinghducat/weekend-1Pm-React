@@ -85,8 +85,6 @@ let num2 = 65;
 function HCF(num1,num2) {
     let largest  = num1 > num2 ? num1 : num2;
 
-
-
     // let hcf = num1*num2/largest;
 
     for (let index = 2; index < largest; index++) {
@@ -115,6 +113,18 @@ function isPrime(number) {
 }
 
 HCF(num1,num2);
+
+
+// 123456789
+// 9 
+// 8
+// 7
+// 6
+// 5
+// 4
+// 3
+// 2
+// 1
 
 
 

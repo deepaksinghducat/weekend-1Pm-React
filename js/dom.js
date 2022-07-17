@@ -46,4 +46,12 @@
 
 // console.log(element.children);
 
-const parentNode = document.getElementsByTagName('li')
+// const parentNode = document.getElementsByTagName('li')
+
+// location
+
+// location.href = "https://www.w3schools.com/";
+
+// history
+
+history.back();

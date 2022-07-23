@@ -46,19 +46,19 @@ class ProductList {
         const root = document.getElementById('root');
 
         for (const key in this.products) {
-           
-            const prod = new Product(this.products[key],key)
+
+            const prod = new Product(this.products[key], key)
 
             const card = prod.productDisplay(root);
 
             // Root 
-            
+
         }
     }
 }
 
 class Product {
-    constructor(product,key) {
+    constructor(product, key) {
         this.product = product
         this.key = key
     }
@@ -68,7 +68,7 @@ class Product {
     //     console.log(this.product);
     // }
 
-     clickMe(){
+    clickMe() {
         console.log("click me");
         console.log(this.product);
     }
@@ -78,14 +78,14 @@ class Product {
         card.className = "card"
         card.style.width = "18rem"
 
-        const image  = document.createElement('img')
+        const image = document.createElement('img')
         image.src = this.product.images
         image.className = "card-img-top"
 
         const cardBody = document.createElement('div');
         cardBody.className = "card-body"
 
-        const h5  = document.createElement('h5')
+        const h5 = document.createElement('h5')
         h5.className = this.product.title
         h5.innerHTML = "fsafsadf"
 
@@ -109,11 +109,10 @@ class Product {
 
         root.append(card);
         // return card
-
         const butt = document.getElementById(`button-${this.key}`);
-        
+
         // butt.addEventListener('click',this.clickMe);
-        butt.addEventListener('click',this.clickMe.bind(this));
+        butt.addEventListener('click', this.clickMe.bind(this));
     }
 }
 

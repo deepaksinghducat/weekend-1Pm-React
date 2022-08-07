@@ -1,15 +1,12 @@
 import React from 'react'
+import { useContext } from 'react'
+import GlobalStore from '../store/ContextApi'
 
-function Child(props) {
-//   const { data } = props;
-const data = props.data;
+function Child() {
+  const ctx = useContext(GlobalStore);
 
-props.addData(10);
-
-console.log(props.data);
-
-return (
-    <div>{data[0]}</div>
+  return (
+    <div>{ctx.name}</div>
   )
 }
 

@@ -1,0 +1,2 @@
+export const LOAD_PRODUCT = 'LOAD_PRODUCT';
+export const ERROR_PRODUCT = 'ERROR_PRODUCT';
